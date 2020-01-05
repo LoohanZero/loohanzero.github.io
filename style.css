@@ -162,6 +162,8 @@ body {
 @media(max-width: 1250px) {
     .header-bkground-img {
         width: 100%;
+        height: 100vh;
+        /*background-image: url(/Portfolio/img/_MG_2641small.JPG);*/
     }
     .header-bkground-img h1 {
         font-size: 60px;
@@ -184,7 +186,7 @@ body {
 
 @media(max-width: 1080px) {
     .header-bkground-img {
-        background-image: none;
+        /*background-image: none;*/
 
     }
 }
