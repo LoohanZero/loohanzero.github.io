@@ -99,7 +99,7 @@ body {
 -----------------------------------------------------------*/
 
 .header-bkground-img {
-    background-image: url(/Portfolio/img/_MG_2641.JPG);
+    background-image: url(./img/_MG_2641.JPG);
     width: 100%;
     background-size: cover;
     height: 100vh;
@@ -185,9 +185,9 @@ body {
 }
 
 @media(max-width: 1080px) {
-    .header-bkground-img {
-        /*background-image: none;*/
-    }
+    /*.header-bkground-img {
+        background-image: none;
+    }*/
 }
 
 @media(max-width: 900px) {
