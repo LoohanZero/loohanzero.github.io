@@ -168,12 +168,12 @@ body {
     .header-bkground-img h1 {
         font-size: 60px;
         position: relative;
-        top: -25px;
+        top: -50px;
         transition: all 0.4s 0.3s;
     }
     .animation-title1, .animation-title2 {
         font-size: 60px;
-        top: calc(50% - 79.5px);
+        top: calc(50% - 105px);
         transition: all 0.4s 0.3s;
     }
     .animation-title1 {
@@ -187,20 +187,19 @@ body {
 @media(max-width: 1080px) {
     .header-bkground-img {
         /*background-image: none;*/
-
     }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 900px) {
     .header-bkground-img {
         width: 100%;
     }
     .animation-title1 {
-        top: 215px;
+        top: 165px;
         left: calc(50% - 125px);
     }
     .animation-title2 {
-        top: 280px;
+        top: 225px;
         left: calc(50% - 170px);
     }
 
