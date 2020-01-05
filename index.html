@@ -60,9 +60,9 @@
         </div>
     </header>
 
-
+    <a name="aboutme"></a>
     <main class="main-container">
-        <a name="aboutme"></a>
+        
         <section class="aboutme section">
             <div class="presentation-container">
 
@@ -101,7 +101,7 @@
         <section class="skills-container section">
             <h2>SKILLS</h2>
             <div class="cards-container">
-                <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100" class="skill-card" >
+                <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100" class="skill-card">
                     <div class="img-container">
                         <img class="logo-img" src="/Portfolio/img/Logos/bootstrap.png" alt="Bootstrap">
                         <img class="bg-dots" src="/Portfolio/img/bg-dots.svg" alt="bg-dots">
@@ -208,7 +208,7 @@
 
                         </div>
                         <label for="know-me" class="form-label">¿Cómo me conociste?</label>
-                        <select id="know-me" name="knows-me-from" class="options">
+                        <select id="know-me" class="options" name="knows-me-from">
                             <option class="option" value="linkedin">Linkedin</option>
                             <option class="option" value="tw">Twitter</option>
                             <option class="option" value="fb">Facebook</option>
@@ -219,14 +219,22 @@
                     <div class="form-second">
                         <label class="form-label" for="motives">Motivo</label>
                         <div class="radio-form">
-                            <input id="motives" type="radio" name="motive">
-                            <label class="form-label motive-form">Oferta de empleo</label>
-                            <input type="radio" name="motive">
-                            <label class="form-label motive-form">Propuesta de trabajo</label>
-                            <input type="radio" name="motive">
-                            <label class="form-label motive-form">Consulta</label>
-                            <input type="radio" name="motive">
-                            <label class="form-label motive-form">Otro</label>
+                            <div class="responsive-form">
+                                <input id="motives" type="radio" name="motive">
+                                <label class="form-label motive-form">Oferta de empleo</label>
+                            </div>
+                            <div class="responsive-form">
+                                <input type="radio" name="motive">
+                                <label class="form-label motive-form">Propuesta de trabajo</label>
+                            </div>
+                            <div class="responsive-form">
+                                <input type="radio" name="motive">
+                                <label class="form-label motive-form">Consulta</label>
+                            </div>
+                            <div class="responsive-form">
+                                <input type="radio" name="motive">
+                                <label class="form-label motive-form">Otro</label>
+                            </div>
                         </div>
                     </div>
                     <div class="form-third flex-form">
@@ -240,7 +248,7 @@
             </div>
         </section>
 
-        
+
         <footer class="footer-container">
             <div class="footer-one">
                 <ul class="footer-list footer-one">
@@ -254,13 +262,14 @@
                                 class="fab fa-github-square"></a></i></li>
                 </ul>
             </div>
-    
+
             <div class="footer-list footer-two">
                 <p class="footer-copyright second-line">© Loohan 2019 - Todos los derechos reservados</p>
                 <p class="footer-vertical-bar second-line">|</p>
                 <p class="footer-email second-line"><a href="mailto:mlulasan@gmail.com">mlulasan@gmail.com</a></p>
                 <p class="footer-vertical-bar second-line">|</p>
-                <p class="footer-phone second-line"><i class="fab fa-whatsapp icon-wsp second-line"></i>+54 9 1156965810</p>
+                <p class="footer-phone second-line"><i class="fab fa-whatsapp icon-wsp second-line"></i>+54 9 1156965810
+                </p>
             </div>
         </footer>
     </main>

@@ -87,7 +87,8 @@ body {
     .hidden-nav-link:hover .hidden-menu {
         display: flex;
         right: -70px;
-        top: 50px;
+        top: 45px;
+        
     }
 }
 
@@ -128,14 +129,14 @@ body {
 }
 .animation-title1 {
     top: calc(50% - 78px);
-    left: calc(50% - 348px);
+    left: calc(50% - 430px);
     opacity: 0;
     transition: all 0.4s;
 }
 
 .animation-title2 {
     top: calc(50% - 78px);
-    right: calc(50% - 504px);
+    right: calc(50% - 430px);
     opacity: 0;
     transition: all 0.4s;
 }
@@ -184,10 +185,11 @@ body {
 @media(max-width: 1080px) {
     .header-bkground-img {
         background-image: none;
+
     }
 }
 
-@media(max-width: 740px) {
+@media(max-width: 800px) {
     .header-bkground-img {
         width: 100%;
     }
@@ -258,8 +260,44 @@ a {
     text-decoration: none;
     color: inherit;
 }
+/*------------------------------------------------------------
+                    ABOUT ME RESPONSIVE
+-----------------------------------------------------------*/
+@media(max-width: 1460px) {
+    .mini-personal {
+        text-align: center;
+    }
+}
+@media(max-width: 1380px) {
+    .aboutme {
+        margin-top: 70px;
+    }
+    .presentation-container {
+        margin-top: 70px;
+    }
+    .presentation-container img {
+        width: 350px;
+        height: 350px;
+    }
+    /*.mini-description {
+        padding-left: 25px;
+    }*/
+    .extended-personal-description p {
+        padding: 5px;
+    }
+}
 
-
+@media(max-width: 1100px) {
+    .presentation-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .personal-description-container {
+        min-width: 385px;
+    }
+}
 /*-----------------------------------------------------------
                         SKILLS SECTION
 -----------------------------------------------------------*/
@@ -267,6 +305,7 @@ a {
     justify-content: center;
     /*background-color: #3b3b55;*/
     padding: 50px 0;
+    margin-top:50px;
 }
 .cards-container {
     display: flex;
@@ -328,6 +367,27 @@ a {
     width: 150px;
 }
 
+/*------------------------------------------------------------
+                    SKILLS RESPONSIVE
+-----------------------------------------------------------*/
+@media(max-width: 1400px) {
+    .skills-container {
+        height: 100%;
+        width: 100%;
+    }
+    .cards-container {
+        width: 90%;
+        justify-content: center;
+        
+    }
+    }
+    @media(max-width: 1300px) {
+        .skill-card {
+            top: 0;
+        }
+        
+    }
+
 /*-----------------------------------------------------------
                         PROJECTS SECTION
 -----------------------------------------------------------*/
@@ -359,8 +419,8 @@ a {
 .contact-form {
     margin: auto;
 }
-.contact-form input {
-    width: 96%;
+/*.contact-form input {
+    width: 100%;
     padding: 10px;
     border-radius: 5px;
     padding-left: 35px;
@@ -368,9 +428,8 @@ a {
     border: none;
     font-family: 'Varela Round', sans-serif;
     position: relative;
-    color: inherit;
     color: grey;
-}
+}*/
 
 .flex-form {
     display: flex;
@@ -388,21 +447,29 @@ a {
 }
 .name-input, 
 .email-input, 
-.options, 
 .textarea, 
 .form-button {
-    width: 97%;
+    width: 100%;
     line-height: 20px;
     border-radius: 5px;
-    padding: 7px;
+    padding: 10px 15px;
     font-family: 'Varela Round', sans-serif;
     color: grey;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
 }
-.options {
+.options  {
     padding: 10px 15px;
     color: grey;
     cursor: pointer;
-    width: 100.5%;
+    width: 100%;
+    line-height: 20px;
+    border-radius: 5px;
+    font-family: 'Varela Round', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
 }
 .name-input, .email-input {
     padding-left: 30px;
@@ -410,7 +477,7 @@ a {
 
 .input-name, .input-email  {
     position: relative;
-    width: 95%;
+    width: 100%;
 }
 .input-name .name-icon, .email-icon {
     position: absolute;
@@ -444,7 +511,7 @@ a {
 
 .name-input:hover, 
 .email-input:hover,
-.options:hover, 
+#know-me:hover, 
 .textarea:hover {
     border: 1px solid #bac9cc;
 }
@@ -467,9 +534,15 @@ a {
     font-weight: normal;
     padding: 5px;
 }
+.radio-form {
+    display: flex;
+}
 .radio-form input {
     margin: 10px 0 5px 0;
     width: fit-content;
+}
+.responsive-form {
+    padding-left: 5px;
 }
 
 .form-button {
@@ -497,8 +570,30 @@ input:invalid:not(:placeholder-shown) {
 }
 
 
+/*------------------------------------------------------------
+                    FORM RESPONSIVE
+-----------------------------------------------------------*/
+
+
+@media(max-width: 1115px) {
+    .contact {
+        margin-top: 50px;
+    }
+    .radio-form {
+        flex-direction: column;
+    }
+    .form-container {
+        min-width: 210px;
+    }
+}
+
+@media(max-width: 515px) {
+    .form-third .form-label {
+        text-align: center;
+    }
+}
 /*-----------------------------------------------------------
-                        FORM SECTION
+                        FOOTER SECTION
 -----------------------------------------------------------*/
 .footer-container {
     color: rgba(255,255,255, 0.5);
