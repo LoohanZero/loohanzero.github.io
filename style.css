@@ -459,6 +459,7 @@ a {
     outline: none;
     border: none;
     box-sizing: border-box;
+    border: 1px solid grey;
 }
 .options  {
     padding: 10px 15px;
@@ -471,6 +472,7 @@ a {
     box-sizing: border-box;
     outline: none;
     border: none;
+    border: 1px solid grey;
 }
 .name-input, .email-input {
     padding-left: 30px;
