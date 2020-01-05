@@ -44,7 +44,27 @@ body {
     margin-right: 20px;
     cursor: pointer;
 }
+.fas.fa-bars, .hidden-nav-link {
+    display: none;
+    position: relative;
+    transition: all 0.3s;
+}
 
+.hidden-menu {
+    list-style: none;
+    background-color: rgba(22,22,22,.8);
+    color: #fff;
+    box-shadow: 1px 1px 20px 3px rgba(0,0,0,0.1);
+    position: absolute;
+    border-radius: 5px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: all 0.3s;
+}
 /*------------------------------------------------------------
                         NAV HOVER
 -----------------------------------------------------------*/
@@ -52,6 +72,26 @@ body {
 .nav-link:hover {
     color: #64a19d;
 }
+/*------------------------------------------------------------
+                        NAV RESPONSIVE
+-----------------------------------------------------------*/
+@media(max-width: 800px) {
+    .hidden-nav-link, .fas.fa-bars {
+        display: block;
+        transition: all 0.3s;
+    }
+    .nav-word {
+        display: none;
+        transition: all 0.3s;
+    }
+    .hidden-nav-link:hover .hidden-menu {
+        display: flex;
+        right: -70px;
+        top: 50px;
+    }
+}
+
+
 
 /*------------------------------------------------------------
                             HEADER                        
@@ -88,14 +128,14 @@ body {
 }
 .animation-title1 {
     top: calc(50% - 78px);
-    left: 260px;
+    left: calc(50% - 348px);
     opacity: 0;
     transition: all 0.4s;
 }
 
 .animation-title2 {
     top: calc(50% - 78px);
-    right: 260px;
+    right: calc(50% - 504px);
     opacity: 0;
     transition: all 0.4s;
 }
@@ -115,6 +155,52 @@ body {
     transition: all 0.4s 0.3s;
 }
 
+/*------------------------------------------------------------
+                        HEADER RESPONSIVE
+-----------------------------------------------------------*/
+@media(max-width: 1250px) {
+    .header-bkground-img {
+        width: 100%;
+    }
+    .header-bkground-img h1 {
+        font-size: 60px;
+        position: relative;
+        top: -25px;
+        transition: all 0.4s 0.3s;
+    }
+    .animation-title1, .animation-title2 {
+        font-size: 60px;
+        top: calc(50% - 79.5px);
+        transition: all 0.4s 0.3s;
+    }
+    .animation-title1 {
+        left:  calc(50% - 210px); 
+    }
+    .animation-title2 {
+        right: calc(50% - 303px);
+    }
+}
+
+@media(max-width: 1080px) {
+    .header-bkground-img {
+        background-image: none;
+    }
+}
+
+@media(max-width: 740px) {
+    .header-bkground-img {
+        width: 100%;
+    }
+    .animation-title1 {
+        top: 215px;
+        left: calc(50% - 125px);
+    }
+    .animation-title2 {
+        top: 280px;
+        left: calc(50% - 170px);
+    }
+
+}
 /*------------------------------------------------------------
                         ABOUT ME SECTION
 -----------------------------------------------------------*/
@@ -172,6 +258,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 
 /*-----------------------------------------------------------
                         SKILLS SECTION
