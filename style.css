@@ -305,8 +305,7 @@ a {
 .skills-container {
     justify-content: center;
     /*background-color: #3b3b55;*/
-    padding: 50px 0;
-    margin-top:50px;
+    padding: 15px;
 }
 .cards-container {
     display: flex;
@@ -375,6 +374,8 @@ a {
     .skills-container {
         height: 100%;
         width: 100%;
+        margin-top:50px;
+        padding: 50px 0;
     }
     .cards-container {
         width: 90%;
