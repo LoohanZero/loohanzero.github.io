@@ -77,6 +77,7 @@ body {
                         NAV RESPONSIVE
 -----------------------------------------------------------*/
 @media(max-width: 800px) {
+
     .hidden-nav-link, .fas.fa-bars {
         display: block;
         transition: all 0.3s;
@@ -101,6 +102,7 @@ body {
 
 .header-bkground-img {
     background-image: url(./img/_MG_2641.JPG);
+    min-height: 560px;
     width: 100%;
     background-size: cover;
     height: 100vh;
@@ -276,6 +278,7 @@ a {
 @media(max-width: 1380px) {
     .aboutme {
         margin-top: 70px;
+        height: 100%;
     }
     .presentation-container {
         margin-top: 70px;
@@ -587,6 +590,7 @@ input:invalid:not(:placeholder-shown) {
 @media(max-width: 1115px) {
     .contact {
         margin-top: 50px;
+        height: 100%;
     }
     .radio-form {
         flex-direction: column;
