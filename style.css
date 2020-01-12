@@ -5,7 +5,8 @@
 
 body {
     font-family: 'Varela Round', sans-serif;
-    background: linear-gradient(to bottom,#161616 0,rgba(22,22,22,.9) 75%,rgba(22,22,22,.8) 100%);
+    /*background: linear-gradient(to bottom,#161616 0,rgba(22,22,22,.9) 75%,rgba(22,22,22,.8) 100%);*/
+    background: linear-gradient(to bottom, rgba(19,19,19,1) 0%, rgba(19,19,19,1) 11%, rgba(28,28,28,1) 15%, rgba(0,0,0,1) 24%, rgba(17,17,17,1) 33%, rgba(44,44,44,1) 42%, rgba(43,43,43,1) 50%, rgba(71,71,71,1) 63%, rgba(89,89,89,1) 74%, rgba(89,89,89,1) 85%, rgba(76,76,76,1) 100%);
 
 }
 
@@ -111,7 +112,7 @@ body {
 
 .header-bkground-img h1 {
     font-size: 100px;
-    background: -webkit-linear-gradient(rgba(70,70,70,50.9),rgba(150,150,150,-18));
+    background: linear-gradient(rgba(70,70,70,50.9),rgba(150,150,150,-18));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     margin-bottom: 36px;
@@ -122,7 +123,7 @@ body {
 
 .animation-title1, .animation-title2 {
     font-size: 100px;
-    background: -webkit-linear-gradient(rgba(70,70,70,50.9),rgba(150,150,150,-18));
+    background: linear-gradient(rgba(70,70,70,50.9),rgba(150,150,150,-18));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     position: absolute;
@@ -216,10 +217,12 @@ body {
     align-items: center;
     height: 100vh;
     color: rgba(255,255,255, 0.5);
+    
 }
 
-/*.aboutme {
-    background-color: #f4f6f7;
+/*.aboutme, .projects {
+    background: linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 6%, rgba(172,172,172,1) 57%, rgba(149,149,149,1) 73%, rgba(123,123,123,1) 91%, rgba(110,110,110,1) 100%);
+    color: #000;
 }*/
 .presentation-container {
     display: flex;
@@ -241,7 +244,8 @@ body {
 .mini-description {
     display: flex;
     justify-content: center;
-    color: #FFF;
+    /*color: #000;*/
+    color: #fff;
     font-weight: lighter;
     font-size: 15px;
 }   
@@ -306,6 +310,7 @@ a {
     justify-content: center;
     /*background-color: #3b3b55;*/
     padding: 15px;
+    /*background: linear-gradient(45deg, rgba(76,76,76,1) 0%, rgba(17,17,17,1) 0%, rgba(44,44,44,1) 0%, rgba(89,89,89,1) 12%, rgba(85,85,85,1) 18%, rgba(71,71,71,1) 39%, rgba(28,28,28,1) 72%, rgba(27,27,27,1) 75%, rgba(19,19,19,1) 100%);*/
 }
 .cards-container {
     display: flex;
