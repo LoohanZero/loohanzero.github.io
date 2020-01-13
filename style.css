@@ -319,6 +319,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
+    justify-content: center;
+
 }
 .skills-container h2 {
    font-size: 45px;
