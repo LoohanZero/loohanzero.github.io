@@ -232,6 +232,7 @@ body {
 @media(max-width: 600px) {
     .header-bkground-img h1 {
         margin-left: 20px;
+        top: -36px;
     }
 
     .header-bkground-img {
