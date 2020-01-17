@@ -258,6 +258,15 @@ body {
         min-width: 300px;
         overflow: hidden;
     }
+
+    .animation-title1 {
+        top: 205px;
+        left: calc(50% - 116px);
+    }
+    .animation-title2 {
+        top: 265px;
+        left: calc(50% - 335px);
+    }
 }
 /*------------------------------------------------------------
                         ABOUT ME SECTION
