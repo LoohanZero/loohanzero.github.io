@@ -254,19 +254,13 @@ body {
 
 @media(max-width: 300px) {
     .header-bkground-img {
+        position: relative;
+        top: 195px;
         width: 130%;
         min-width: 300px;
         overflow: hidden;
     }
-
-    .animation-title1 {
-        top: 205px;
-        left: calc(50% - 116px);
-    }
-    .animation-title2 {
-        top: 265px;
-        left: calc(50% - 335px);
-    }
+    
 }
 /*------------------------------------------------------------
                         ABOUT ME SECTION
