@@ -35,7 +35,7 @@ body {
 
 @media (max-width: 600px) {
   .body {
-      padding-left: 135px;
+    padding-left: 135px;
     margin-right: -60px;
   }
 
@@ -44,14 +44,38 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-left: 85px;;
+    padding-left: 85px;
   }
-
 }
-
-@media(max-width: 375px) {
+@media (max-width: 450px) {
+  main {
+    max-width: 450px;
+  }
+}
+@media (max-width: 414px) {
+  main {
+    max-width: 414px;
+  }
+}
+@media (max-width: 375px) {
   main {
     max-width: 375px;
+  }
+}
+
+@media (max-width: 360px) {
+  main {
+    max-width: 360px;
+  }
+}
+@media (max-width: 320px) {
+  main {
+    max-width: 320px;
+  }
+}
+@media (max-width: 280px) {
+  main {
+    max-width: 280px;
   }
 }
 /*--------------------------------------------------------------------------------------
@@ -145,12 +169,38 @@ body {
   }
 }
 
-@media(max-width: 375px) {
+@media (max-width: 450px) {
+  .navigator {
+    max-width: 450px;
+  }
+}
+@media (max-width: 414px) {
+  .navigator {
+    max-width: 414px;
+  }
+}
+@media (max-width: 375px) {
   .navigator {
     max-width: 375px;
   }
 }
+@media (max-width: 360px) {
+  .navigator {
+    max-width: 360px;
+  }
+}
 
+@media (max-width: 320px) {
+  .navigator {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 280px) {
+  .navigator {
+    max-width: 280px;
+  }
+}
 /*------------------------------------------------------------
                             HEADER                        
 -----------------------------------------------------------*/
@@ -353,16 +403,38 @@ a {
     min-width: 385px;
   }
 }
-@media(max-width: 375px) {
+@media (max-width: 450px) {
   .extended-personal-description {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
- .presentation-container p {
+  .presentation-container p {
+    max-width: 400px;
+  }
+}
+@media (max-width: 414px) {
+  .presentation-container p {
+    max-width: 361px;
+  }
+}
+@media (max-width: 375px) {
+  .presentation-container p {
     max-width: 325px;
   }
 }
+@media (max-width: 320px) {
+  .presentation-container p {
+    max-width: 270px;
+  }
+}
+
+@media (max-width: 280px) {
+  .presentation-container p {
+    max-width: 230px;
+  }
+}
+
 /*-----------------------------------------------------------
                         SKILLS SECTION
 -----------------------------------------------------------*/
@@ -502,16 +574,56 @@ a {
     height: 100%;
   }
 }
+@media (max-width: 450px) {
+  .project {
+    max-width: 450px;
+    text-align: center;
+  }
+  .project > embed {
+    max-width: 440px;
+  }
+}
+@media (max-width: 414px) {
+  .project {
+    max-width: 414px;
+  }
+  .project > embed {
+    max-width: 404px;
+  }
+}
 @media (max-width: 375px) {
   .project {
     max-width: 365px;
-    text-align: center;
   }
   .project > embed {
     max-width: 365px;
   }
 }
+@media (max-width: 360px) {
+  .project {
+    max-width: 350px;
+  }
+  .project > embed {
+    max-width: 350px;
+  }
+}
 
+@media (max-width: 320px) {
+  .project {
+    max-width: 310px;
+  }
+  .project > embed {
+    max-width: 310px;
+  }
+}
+@media (max-width: 280px) {
+  .project {
+    max-width: 270px;
+  }
+  .project > embed {
+    max-width: 270px;
+  }
+}
 /*-----------------------------------------------------------
                         FORM SECTION
 -----------------------------------------------------------*/
@@ -759,5 +871,11 @@ input:invalid:not(:placeholder-shown) {
   }
   .footer-copyright {
     margin: 0 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-two > p {
+    line-height: 25px;
   }
 }
