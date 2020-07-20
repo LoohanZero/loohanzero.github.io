@@ -24,6 +24,7 @@ body {
   );
   width: 100%;
   min-width: 100%;
+  max-width: 100%;
 }
 .main {
   display: flex;
@@ -34,7 +35,7 @@ body {
 
 @media (max-width: 600px) {
   .body {
-    padding-left: 135px;
+      padding-left: 135px;
     margin-right: -60px;
   }
 
@@ -43,31 +44,9 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-left: 85px;
+    padding-left: 85px;;
   }
-}
 
-@media (max-width: 590px) {
-  main {
-    padding-left: 95px;
-  }
-}
-
-@media (max-width: 490px) {
-  main {
-    padding-left: 225px;
-  }
-}
-
-@media (max-width: 470px) {
-  main {
-    padding-left: 440px;
-  }
-}
-@media (max-width: 3320px) {
-  main {
-    padding-left: 365px;
-  }
 }
 /*--------------------------------------------------------------------------------------
                                         NAV
@@ -224,7 +203,7 @@ body {
 
 @media (max-width: 760px) {
   .header-bkground-img {
-    width: 120%;
+    width: 116%;
   }
 }
 
@@ -248,36 +227,22 @@ body {
 }
 @media (max-width: 590px) {
   .header-bkground-img {
-    width: 140%;
-  }
-}
-
-@media (max-width: 500px) {
-  .header-bkground-img {
-    width: 165%;
+    width: 125%;
   }
 }
 
 @media (max-width: 470px) {
   .header-bkground-img {
-    width: 200%;
+    width: 135%;
   }
 }
-
-@media (max-width: 412px) {
+@media (max-width: 300px) {
   .header-bkground-img {
-    width: 210%;
-  }
-}
-@media (max-width: 400px) {
-  .header-bkground-img {
-    width: 230%;
-  }
-}
-
-@media (max-width: 320px) {
-  .header-bkground-img {
-    width: 230%;
+    position: relative;
+    top: 195px;
+    width: 130%;
+    min-width: 300px;
+    overflow: hidden;
   }
 }
 /*------------------------------------------------------------
