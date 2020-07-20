@@ -48,6 +48,12 @@ body {
   }
 
 }
+
+@media(max-width: 375px) {
+  main {
+    max-width: 375px;
+  }
+}
 /*--------------------------------------------------------------------------------------
                                         NAV
 --------------------------------------------------------------------------------------*/
@@ -139,11 +145,11 @@ body {
   }
 }
 
-/* @media (max-width: 400px) {
+@media(max-width: 375px) {
   .navigator {
-    max-width: 400px;
+    max-width: 375px;
   }
-} */
+}
 
 /*------------------------------------------------------------
                             HEADER                        
@@ -202,17 +208,17 @@ body {
 }
 
 @media (max-width: 760px) {
-  .header-bkground-img {
+  /* .header-bkground-img {
     width: 116%;
-  }
+  } */
 }
 
 @media (max-width: 660px) {
-  .header-bkground-img {
+  /* .header-bkground-img {
     width: 116%;
     overflow: hidden;
     align-items: flex-start;
-  }
+  } */
 
   .header-bkground-img h1 {
     padding-top: 150px;
@@ -226,24 +232,24 @@ body {
   }
 }
 @media (max-width: 590px) {
-  .header-bkground-img {
+  /* .header-bkground-img {
     width: 125%;
-  }
+  } */
 }
 
 @media (max-width: 470px) {
-  .header-bkground-img {
+  /* .header-bkground-img {
     width: 135%;
-  }
+  } */
 }
 @media (max-width: 300px) {
-  .header-bkground-img {
+  /* .header-bkground-img {
     position: relative;
     top: 195px;
     width: 130%;
     min-width: 300px;
     overflow: hidden;
-  }
+  } */
 }
 /*------------------------------------------------------------
                         ABOUT ME SECTION
@@ -345,6 +351,16 @@ a {
   }
   .personal-description-container {
     min-width: 385px;
+  }
+}
+@media(max-width: 375px) {
+  .extended-personal-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ .presentation-container p {
+    max-width: 325px;
   }
 }
 /*-----------------------------------------------------------
@@ -486,7 +502,14 @@ a {
     height: 100%;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 375px) {
+  .project {
+    max-width: 365px;
+    text-align: center;
+  }
+  .project > embed {
+    max-width: 365px;
+  }
 }
 
 /*-----------------------------------------------------------
