@@ -6,6 +6,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Varela Round", sans-serif;
   background: linear-gradient(
@@ -26,6 +27,7 @@ body {
   min-width: 100%;
   max-width: 100%;
 }
+
 .main {
   display: flex;
   flex-direction: column;
@@ -47,37 +49,54 @@ body {
     padding-left: 85px;
   }
 }
+@media (max-width: 768px) {
+  main {
+    max-width: 768px;
+  }
+}
+@media (max-width: 568px) {
+  main {
+    max-width: 568px;
+  }
+}
+
 @media (max-width: 450px) {
   main {
     max-width: 450px;
   }
 }
+
 @media (max-width: 414px) {
   main {
     max-width: 414px;
   }
 }
+
 @media (max-width: 375px) {
   main {
     max-width: 375px;
   }
 }
 
+
 @media (max-width: 360px) {
   main {
     max-width: 360px;
   }
 }
+
 @media (max-width: 320px) {
   main {
     max-width: 320px;
   }
 }
+
 @media (max-width: 280px) {
   main {
     max-width: 280px;
   }
 }
+
 /*--------------------------------------------------------------------------------------
                                         NAV
 --------------------------------------------------------------------------------------*/
@@ -168,7 +187,16 @@ body {
     top: 45px;
   }
 }
-
+@media (max-width: 768px) {
+  .navigator {
+    max-width: 768px;
+  }
+}
+@media (max-width: 568px) {
+  .navigator {
+    max-width: 568px;
+  }
+}
 @media (max-width: 450px) {
   .navigator {
     max-width: 450px;
@@ -255,20 +283,19 @@ body {
   .header-bkground-img {
     width: 100%;
   }
+  .header-bkground-img .animation-title1,
+  .header-bkground-img .animation-title2 {
+    background: linear-gradient(
+      rgba(255, 255, 255, 50.9),
+      rgba(150, 150, 150, -18)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
 }
 
-@media (max-width: 760px) {
-  /* .header-bkground-img {
-    width: 116%;
-  } */
-}
 
 @media (max-width: 660px) {
-  /* .header-bkground-img {
-    width: 116%;
-    overflow: hidden;
-    align-items: flex-start;
-  } */
 
   .header-bkground-img h1 {
     padding-top: 150px;
@@ -281,25 +308,10 @@ body {
     margin: 0;
   }
 }
-@media (max-width: 590px) {
-  /* .header-bkground-img {
-    width: 125%;
-  } */
-}
-
-@media (max-width: 470px) {
-  /* .header-bkground-img {
-    width: 135%;
-  } */
-}
 @media (max-width: 300px) {
-  /* .header-bkground-img {
-    position: relative;
-    top: 195px;
-    width: 130%;
-    min-width: 300px;
-    overflow: hidden;
-  } */
+  .header-bkground-img h1 {
+    font-size: 50px;
+  }
 }
 /*------------------------------------------------------------
                         ABOUT ME SECTION
@@ -403,12 +415,22 @@ a {
     min-width: 385px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .extended-personal-description {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .presentation-container p {
+    max-width: 718px;
+  }
+}
+@media (max-width: 568px) {
+  .presentation-container p {
+    max-width: 518px;
+  }
+}
+@media (max-width: 450px) {
   .presentation-container p {
     max-width: 400px;
   }
@@ -421,6 +443,11 @@ a {
 @media (max-width: 375px) {
   .presentation-container p {
     max-width: 325px;
+  }
+}
+@media (max-width: 360px) {
+  .presentation-container p {
+    max-width: 310px;
   }
 }
 @media (max-width: 320px) {
@@ -574,6 +601,19 @@ a {
     height: 100%;
   }
 }
+@media (max-width: 768px) {
+  .project {
+    max-width: 758px;
+    text-align: center;
+  }
+}
+@media (max-width: 568px) {
+  .project {
+    max-width: 558px;
+    text-align: center;
+  }
+}
+
 @media (max-width: 450px) {
   .project {
     max-width: 450px;
