@@ -195,13 +195,13 @@
                     <h3 class="project-title">Ecualizador</h3>
                     <p class="project-description">HTML, Sass</p></a>
             </article>
-
+<!-- 
             <article class="project" data-aos="fade-left" data-aos-duration="1000">
                 <embed src="https://lujanmarvelapp.netlify.app/" style="width:550px; height: 300px;">
                 <a href="https://lujanmarvelapp.netlify.app/" target="_blank" >
                     <h3 class="project-title">Marvel App</h3>
                     <p class="project-description">ReactJS</p></a>
-            </article>
+            </article> -->
 
             </div>  
             
@@ -211,7 +211,7 @@
         <a name="contact"></a>
         <section class="contact section">
             <div class="form-container">
-                <form action="" class="contact-form">
+                <form target="_blank" action="https://formsubmit.co/mlulasan@gmail.com" class="contact-form" method="post">
                     <div class="form-first flex-form">
 
                         <label class="form-label" for="complete-name">Nombre Completo:</label>
@@ -226,7 +226,7 @@
                         <label class="form-label" for="email">E-mail:</label>
 
                         <div class="input-email">
-                            <input id="email" type="email" name="email" placeholder="usuario@whatever.com"
+                            <input id="email" type="email" name="email" placeholder="tuusuario@email.com"
                                 class="email-input" required>
                             <i class="fas fa-envelope email-icon"></i>
                             <i class="fas fa-check" id="check-icon"></i>
@@ -239,8 +239,8 @@
                         <label for="know-me" class="form-label">¿Cómo me conociste?</label>
                         <select id="know-me" class="options" name="knows-me-from">
                             <option class="option" value="linkedin">Linkedin</option>
-                            <option class="option" value="tw">Twitter</option>
-                            <option class="option" value="fb">Facebook</option>
+                            <option class="option" value="twitter">Twitter</option>
+                            <option class="option" value="facebook">Facebook</option>
                             <option class="option" value="referred">Referidos</option>
                             <option class="option" value="other">Otros</option>
                         </select>
@@ -248,20 +248,20 @@
                     <div class="form-second">
                         <label class="form-label" for="motives">Motivo</label>
                         <div class="radio-form">
-                            <div class="responsive-form">
-                                <input id="motives" type="radio" name="motive">
+                            <!-- <div class="responsive-form">
+                                <input class="motives" id="motives" type="radio" name="motive">
                                 <label class="form-label motive-form">Oferta de empleo</label>
-                            </div>
+                            </div> -->
                             <div class="responsive-form">
-                                <input type="radio" name="motive">
+                                <input class="motives" type="radio" name="motive" value="propuesta laboral">
                                 <label class="form-label motive-form">Propuesta de trabajo</label>
                             </div>
                             <div class="responsive-form">
-                                <input type="radio" name="motive">
+                                <input class="motives" type="radio" name="motive" value="consulta">
                                 <label class="form-label motive-form">Consulta</label>
                             </div>
                             <div class="responsive-form">
-                                <input type="radio" name="motive">
+                                <input class="motives" type="radio" name="motive" value="otro">
                                 <label class="form-label motive-form">Otro</label>
                             </div>
                         </div>
@@ -271,7 +271,7 @@
                         <textarea id="message" name="message" cols="55" rows="5" class="textarea"
                             placeholder="Escríbelo aquí."></textarea>
 
-                        <button action="javascript:void(0)" class="form-button">ENVIAR</button>
+                        <button id="button" type="submit" action="javascript:void(0)" class="form-button">ENVIAR</button>
                     </div>
                 </form>
             </div>
@@ -308,6 +308,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
