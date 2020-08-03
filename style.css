@@ -539,6 +539,7 @@ a {
                         PROJECTS SECTION
 -----------------------------------------------------------*/
 .projects {
+  height: 100%;
   padding: 150px 0;
   display: flex;
   justify-content: center;
@@ -550,6 +551,9 @@ a {
   text-transform: uppercase;
   padding-bottom: 20px;
 }
+
+
+
 .projects-container {
   width: 90%;
   display: flex;
@@ -560,14 +564,16 @@ a {
   cursor: pointer;
   padding: 20px;
 }
-.project > embed {
+.project img {
+  width: 550px;
+  height: 300px;
   background-color: #ffffff;
   filter: grayscale(50%) blur(0.5px);
   transition: 0.3s;
-  box-shadow: 1px 1px 10px 2px rgba(150, 150, 150, 0.3);
+  /* box-shadow: 1px 1px 10px 2px rgba(150, 150, 150, 0.3); */
 }
 
-.project:hover > embed {
+.project:hover > img {
   filter: none;
   transition: 0.3s;
 }
