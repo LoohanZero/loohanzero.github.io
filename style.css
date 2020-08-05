@@ -613,13 +613,13 @@ a {
 }
 @media (max-width: 768px) {
   .project {
-    max-width: 758px;
+    max-width: 600px;
     text-align: center;
   }
 }
 @media (max-width: 568px) {
   .project {
-    max-width: 558px;
+    max-width: 550px;
     text-align: center;
   }
 }
@@ -643,10 +643,10 @@ a {
 }
 @media (max-width: 375px) {
   .project {
-    max-width: 365px;
+    max-width: 375px;
   }
   .project img {
-    max-width: 365px;
+    max-width: 360px;
   }
 }
 @media (max-width: 360px) {
