@@ -78,7 +78,6 @@ body {
   }
 }
 
-
 @media (max-width: 360px) {
   main {
     max-width: 360px;
@@ -294,9 +293,7 @@ body {
   }
 }
 
-
 @media (max-width: 660px) {
-
   .header-bkground-img h1 {
     padding-top: 150px;
     flex-direction: column;
@@ -325,6 +322,13 @@ body {
   align-items: center;
   height: 100vh;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.section h2 {
+  font-size: 45px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 20px;
 }
 
 .presentation-container {
@@ -475,10 +479,10 @@ a {
   width: 80%;
   justify-content: center;
 }
-.skills-container h2 {
+/* .skills-container h2 {
   font-size: 45px;
   color: #fff;
-}
+} */
 
 .skill-card {
   display: flex;
@@ -540,19 +544,17 @@ a {
 -----------------------------------------------------------*/
 .projects {
   height: 100%;
-  padding: 150px 0;
+  padding-top: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.projects h2 {
+/* .projects h2 {
   font-size: 45px;
   color: #fff;
   text-transform: uppercase;
   padding-bottom: 20px;
-}
-
-
+} */
 
 .projects-container {
   width: 90%;
@@ -568,12 +570,14 @@ a {
   width: 550px;
   height: 300px;
   background-color: #ffffff;
-  filter: grayscale(50%) blur(0.5px);
+  filter: grayscale(25%) blur(0.5px);
   transition: 0.3s;
-  /* box-shadow: 1px 1px 10px 2px rgba(150, 150, 150, 0.3); */
+  border-radius: 5px;
+  overflow: hidden;
+
 }
 
-.project:hover > img {
+.project:hover img {
   filter: none;
   transition: 0.3s;
 }
@@ -625,7 +629,7 @@ a {
     max-width: 450px;
     text-align: center;
   }
-  .project > embed {
+  .project img {
     max-width: 440px;
   }
 }
@@ -633,7 +637,7 @@ a {
   .project {
     max-width: 414px;
   }
-  .project > embed {
+  .project img {
     max-width: 404px;
   }
 }
@@ -641,7 +645,7 @@ a {
   .project {
     max-width: 365px;
   }
-  .project > embed {
+  .project img {
     max-width: 365px;
   }
 }
@@ -649,7 +653,7 @@ a {
   .project {
     max-width: 350px;
   }
-  .project > embed {
+  .project img {
     max-width: 350px;
   }
 }
@@ -658,7 +662,7 @@ a {
   .project {
     max-width: 310px;
   }
-  .project > embed {
+  .project > img {
     max-width: 310px;
   }
 }
@@ -666,7 +670,7 @@ a {
   .project {
     max-width: 270px;
   }
-  .project > embed {
+  .project > img {
     max-width: 270px;
   }
 }
@@ -679,6 +683,7 @@ a {
   justify-content: space-evenly;
   align-items: center;
   padding-bottom: 30px;
+  padding-top: 40px;
 }
 
 .form-container {
